@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Ribeye&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    display: flex;
+    font-family: Ribeye, sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("images/frontFaceCards/v1008-25-b.jpg");
+
+}
+
+.memory-game{
+    height: 2300px;
+    width: 300vh;
+    background-color: rgba(233, 216, 165, 0.7);    
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1700px;
+    margin-bottom: 400px;
+    box-shadow: 0px 50px 100px -20px  rgba(50, 50, 93, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+   
+.memory-card{
+   
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(100% / 4 - 10px);
+    height: calc(100% / 4 - 10px);
+    margin: 5px;
+    cursor: pointer;
+    justify-content: center;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .6s;
+ 
+}
+.memory-card:active {
+    transition: transform .4s;
+    transform: scale(0.92);
+
+  }
+  .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+
+.memory-card.shake{
+    animation: shake .2s;
+
+}
+@keyframes shake {
+    0%{
+            transform: rotate(0deg);
+        }
+    
+        30% {
+            transform: rotate(8deg);
+        }
+        
+        60% {
+            transform: rotate(-8deg);
+        }
+        
+        100% {
+            transform: rotate(0deg);
+        
+    }
+}
+
+  .front-face,
+  .back-face {
+   
+    height: 94%;
+    width: 94%;
+    background: rgb(181, 145, 94);
+    border-radius: 10px;
+    box-shadow: 1px 10px 10px rgba(90, 69, 69, 0.5);
+    position: absolute;
+    transition: transform .5s linear;
+    backface-visibility: hidden;
+
+}
+
+.front-face{
+    transform: rotateY(180deg);
+
+}
+
+.buttons-group{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    
+}
+a{
+    position: absolute;
+    width: 700px;
+    height: 200px;
+    font-size: 5em;
+    font-weight: 400;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgb(150, 84, 30);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 35vh;
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover{
+   transform: translateY(-5px);
+   box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.25);
+}
+.start_button{
+
+    margin-left: -71vh;
+    background-color: burlywood;
+}
+.instructions_button{
+    margin-left: -43vh;
+    background-color: burlywood;
+}
+
+@media only screen and (max-width: 600px) {
+    .memory-game{
+        position: relative;
+        height: 55vh; 
+        width: 900vh;
+        margin: 25px 30px;
+        box-shadow: 0px 50px 100px -20px  rgba(50, 50, 93, 0.1);
+       }
+
+        a{
+            width: 50%;
+            height: 6vh;
+            left: 80px;
+            text-align: center;
+            font-size: 20px;
+            position: relative;
+                   
+        }
+    .start_button
+    /*New game button styling*/
+    
+    {
+        margin: 0;
+        position: absolute;
+        top: 85%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center;
+        align-items: center;
+    
+    }
+    .instructions_button{
+        margin: 0;
+        position: absolute;
+        top: 94%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center;
+        align-items: center;
+    }
+    
+    }
