@@ -15,9 +15,7 @@ body
     justify-content: center;
     min-height: 100vh;
     background-image: url("images/frontFaceCards/v1008-25-b.jpg");
-
 }
-
 .memory-game{
     height: 2300px;
     width: 300vh;
