@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 body
@@ -15,10 +14,7 @@ body
     justify-content: center;
     min-height: 100vh;
     background-image: url("images/frontFaceCards/v1008-25-b.jpg");
-
 }
-
-
  .container{
 
     text-transform: capitalize;
