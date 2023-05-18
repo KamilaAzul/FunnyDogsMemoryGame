@@ -1,6 +1,5 @@
-Funny Dogs Memory Game
+# **_Funny Dogs Memory Game_**
 
-Welcome,
 
 The Funny Dogs Memory Game is a simple matching cards game in which all the cards are flipped backside on a surface. 
 There are 8 cards that have the same images, but each card is placed randomly, and the user's mission is to find them. It is possible to flip up with only two cards over each turn. 
@@ -10,14 +9,60 @@ Due to the low level of difficulty, the game is intended for younger users,to en
 
 Throughout the creation of this game, I was using three HTML ( index.html, welcome.html, instruction.html) two CSS files (game.css, style.css), and one java.js file.
 
-## Welcome Page
 
-The first-page purpose is welcome a user and as well to give two options: 
+# Contents
 
-- to start the game,
-- to get to know the instructions of the game.
+* [**User Experience UX**](<#user-experience-ux>)
+    * [Site Structure](<#site-structure>)
+    * [Design Choices](<#design-choices>)
+    * [Typography](<#typography>)
+    * [Colour Scheme](<#colour-scheme>)
 
- There are two buttons that will lead to next pages.
+* [**Features**](<#features>)
+   * [Welcome Page](<#welcome-page>)
+   * [Instruction Page](<#instruction-page>)
+   * [Memory Game Page](<#memory-game-page>)
+* [**Technologies Used**](<#technologies-used>)
+* [**Testing**](<#testing>)
+* [**Deployment**](<#deployment>)
+* [**Credits**](<#credits>)
+    * [**Content**](<#content>)
+    * [**Media**](<#media>)
+*  [**Acknowledgements**](<#acknowledgements>)
+        
+# User Experience (UX)
+
+## Site Structure
+
+The Funny Dogs Memory Game website has three pages. The [welcome page](index.html) is the default loading page, [instructions](info.html), [game](game.html).
+
+[Back to top](<#contents>)
+
+## User Stories
+
+- As a user I want to be able to navigate through the whole site smoothly.
+- As a user I want to understand the purpose of the site upon loading it.
+- As a user I want to understand the rules of the game.
+- As a user I want to play the game with no technical problems.
+
+[Back to top](<#contents>)
+
+## Design-choices
+ * ### Typography
+      * The fonts chosen were 'Ribeye'.
+ * ### Colour Scheme
+      The color scheme chosen for the project is warm colors in shades of brown, beige, and cream.
+
+      ![Alt text](images/screenshoots/Palette.png)
+
+[Back to top](<#contents>)
+
+## Existing Features  
+### Welcome Page
+
+ * The first-page purpose is welcome a user and as well to give two options: 
+      - to start the game,
+      - to get to know the instructions of the game.
 
 After clicking a _Start Game_ button the user will be transferred to a memory game page. 
 
@@ -25,7 +70,9 @@ After clicking the _Instructions_ button the user will be transferred to an inst
 
 ![Alt text](images/screenshoots/welcome%20page.png)
 
-## Instruction Page
+[Back to top](<#contents>)
+
+### Instruction Page
 
 This page will give a user an explanation of the rules of the game and will give a two option:
 
@@ -33,59 +80,79 @@ This page will give a user an explanation of the rules of the game and will give
 -  to the Memory card page by clicking _Start Game_ where you can start the game.
 
 ![Alt text](images/screenshoots/screenshot%20instruction%20site.png)
-## Memory Card Game Page
 
-This page contains 16 randomly arranged cards.
-The cards are turned over. Only two cards can be flipped at a time.
+[Back to top](<#contents>)
 
-`Screenshot with all the cards turned backwards`
+## Memory Game Page
 
+This page contains sixteen randomly arranged cards, eight matching pairs, as we need two of each picture.  
 
-![Alt text](images/screenshoots/Memory%20Game%20page.png)
-
-`Screenshot with reversed cards showing the front`
-
+* The memory card container with card facing forward
 
 ![Alt text](images/screenshoots/Memory%20Game%20Page%20cards.png)
 
-`style.css, game.css`
+* The memory card container with card facing backwards 
 
-Those files contain the stylesheet language to control the presentation of the elements that will appear on the website.
-Style.css is responsible for styling Welcome Page and Instruction Page.
-Game.css is responsible for a Memory Card Game Page.
-
-`script.js`
-This file contains the programming language that will decide what to do when the user  clicks the card buttons
-on the web page. 
-If two cards are matching they will stay flipped out. If the cards don't match they will turn(return to the starting position).
-Thanks to the function shuffle,  after matching all the cards, they will be mixed up and placed randomly.
-
-`index.html`
-In this file there are placed details on the main game page with all the images and as well two buttons: New game, 
-
-# Images
-
-The images are added in the index html file Memory Card section.
-In total, we have sixteen cards, eight matching pairs as we need two of each picture.  
-
-All images have a `class` assigned to them reference to the CSS file for displaying an element, in this instance it is the ‘.deck .card’ part entry
-in the CSS file, see corresponding highlighted entries above.
-• type = > description of card to be used by JavaScript to identify a matching set.
+![Alt text](images/screenshoots/Memory%20Game%20page.png)
 
 
+[Back to top](<#contents>)
 
-# Validation W3C CSS Validator 
+## Technologies Used
+* `HTML` provides the content and structure for the website.
+* `CSS` provides the styling.
+* `JavaScript` to create dynamically updating content.
+* [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
+* [Github](https://github.com/) - used to host and edit the website.
 
-Results for https://kamilaazul.github.io/FunnyDogsMemoryGame/index.html (CSS level 3 + SVG)
+[Back to top](<#contents>)
 
-- No Error Found.
+## Testing
 
-Results for https://kamilaazul.github.io/FunnyDogsMemoryGame/info.html (CSS level 3 + SVG)
+### Code Validation
 
-- No Error Found.
+All the code was validated on the [W3C html Validator](https://validator.w3.org/) and the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). 
+Some small errors were found on the home and inspiration pages. After a fix and retest, no errors were returned for both. 
 
-Results for https://kamilaazul.github.io/FunnyDogsMemoryGame/welcome.html (CSS level 3 + SVG)
+The HTML validator results for each page are below:
 
-- No Error Found.
+* Welome Page
+  - No Error Found.
 
-# Validation W3C CSS Validator 
+* Instruction Page
+  - No Error Found.
+* Memory Game Page
+  - No Error Found.
+
+[Back to top](<#contents>)
+
+## Deployment
+
+The site was deployed to GitHub page.
+
+[Back to top](<#contents>)
+
+## Credits
+### Content
+
+* The font came from [Google Fonts](https://fonts.google.com/).
+* The code for organizing the Memory Game Page and styling was inspired by an example on  [YouTube tutorial](https://www.youtube.com/watch?v=6ohVH0hQlD8).
+* The Javascript code for the Game Page was inspired by an example on  [YouTube tutorial](https://marina-ferreira.github.io/tutorials/js/memory-game/).
+* The Javascript code for *the shuffle cards function* of the Memory Game was inspired by an example on  [YouTube tutorial](https://www.youtube.com/watch?v=1G6MwIy-7Yc).
+* The inspiration for the Readme file came from this repository on [GitHub](https://github.com/EwanColquhoun/wawaswoods/blob/master/README.md).
+
+
+### Media
+* The photos for the front cards came from [Creative Fabrica](https://www.creativefabrica.com/)
+* The photos for the back cards and background comes from [Feepick](https://pl.freepik.com/)
+
+[Back to top](<#contents>)
+
+## Acknowledgements
+
+The website was completed as a Portfolio Project 2 JavaScript Essentials Project made for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). 
+
+I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community, and all at the Code Institute for their help and support.
+
+[Back to top](<#contents>)
+
