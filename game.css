@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 body
@@ -15,36 +14,35 @@ body
     justify-content: center;
     min-height: 100vh;
     background-image: url("images/frontFaceCards/v1008-25-b.jpg");
+    position: relative;
 }
 .memory-game{
-    height: 2300px;
-    width: 300vh;
+    height: 560px;
+    width: 560px;
     background-color: rgba(233, 216, 165, 0.7);    
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 1700px;
-    margin-bottom: 400px;
     box-shadow: 0px 50px 100px -20px  rgba(50, 50, 93, 0.5);
+    margin-top: 20px;
+    top: 30px; 
     align-items: center;
     justify-content: center;
-}
+    position: absolute;
 
-   
+}
 .memory-card{
-   
     display: flex;
     position: relative;
-    align-items: center;
-    flex-wrap: wrap;
     width: calc(100% / 4 - 10px);
     height: calc(100% / 4 - 10px);
-    margin: 5px;
     cursor: pointer;
     justify-content: center;
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .6s;
+    margin: 5px;
+    top:4px;
  
 }
 .memory-card:active {
@@ -75,7 +73,6 @@ body
         
         100% {
             transform: rotate(0deg);
-        
     }
 }
 
@@ -90,38 +87,39 @@ body
     position: absolute;
     transition: transform .5s linear;
     backface-visibility: hidden;
-
 }
-
 .front-face{
     transform: rotateY(180deg);
-
 }
-
+/*styling buttons*/
 .buttons-group{
     width: 100%;
     height: 50px;
     display: flex;
     
 }
-a{
-    position: absolute;
-    width: 700px;
-    height: 200px;
-    font-size: 5em;
+.buttons-group a{
+
+    background-color: rgb(0, 255, 4);
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
     font-weight: 400;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 290px;
+    position: absolute;  
+}
+a{
     border-radius: 30px;
     outline: none;
     cursor: pointer;
     box-shadow: 0 3px 5px rgb(150, 84, 30);
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin-top: 35vh;
     box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     color: black;
-
 }
 
 a:hover{
@@ -130,53 +128,195 @@ a:hover{
 }
 .start_button{
 
-    margin-left: -71vh;
+    margin-left: 560px;
     background-color: burlywood;
 }
 .instructions_button{
-    margin-left: -43vh;
+    margin-left: 780px;
     background-color: burlywood;
 }
+/* Media queries */ 
+
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+
+
+@media only screen and (max-width: 1500px){
+    .memory-game
+    {
+        height: 520px;
+        width: 520px;
+        margin-left: 100px;
+        margin-bottom: 400px;
+        top: 20px;
+        }
+      
+        .buttons-group a
+        {
+            width: 160px;
+            height: 40px;
+            display: flex;
+            font-size: 15px;
+            flex-direction: row;  
+            margin-top: 280px;
+            background-color: rgb(255, 0, 187);
+            
+     }
+     .start_button
+        {
+            margin-left: 490px;
+        }
+    .instructions_button{
+    
+           margin-left: 700px;
+            
+        } 
+    }
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (max-width: 1200px) {
+
+    .memory-game{
+    height: 520px;
+    width: 520px;
+    margin-left: 100px;
+    margin-bottom: 400px;
+    top: 20px;
+}
+  
+    .buttons-group a{
+        width: 160px;
+        height: 40px;
+        display: flex;
+        font-size: 15px;
+        flex-direction: row;  
+        margin-top: 280px;
+        
+    background-color: aqua;
+ }
+ .start_button
+ {
+     margin-left: 370px;
+ }
+.instructions_button{
+
+    margin-left: 560px;
+     
+ }  }
+
+/* Medium screen sizes from 950px wide and down
+(large laptops and desktops, 950px and up) */
+
+@media only screen and (max-width: 950px){
+    
+    .memory-game{
+    height: 530px;
+    width: 530px;
+    margin-left: 100px;
+    margin-bottom: 400px;
+    top: 10px;
+    position: absolute;}
+      
+    .buttons-group a{
+        width: 160px;
+        height: 40px;
+        display: flex;
+        font-size: 15px;
+        flex-direction: row;  
+        margin-top: 280px;
+        background-color: blue; 
+        
+     }
+     .start_button{
+        margin-left: 270px;
+    }
+   .instructions_button{
+   
+       margin-left: 460px;}
+    }
 
 @media only screen and (max-width: 600px) {
     .memory-game{
-        position: relative;
-        height: 55vh; 
-        width: 900vh;
-        margin: 25px 30px;
-        box-shadow: 0px 50px 100px -20px  rgba(50, 50, 93, 0.1);
-       }
-
-        a{
-            width: 50%;
-            height: 6vh;
-            left: 80px;
-            text-align: center;
-            font-size: 20px;
-            position: relative;
-                   
+        height: 450px;
+        width: 450px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 400px;
+        top: 20px;
+        position: absolute;}
+          
+        .buttons-group a{
+            width: 160px;
+            height: 40px;
+            display: flex;
+            font-size: 10px;
+            flex-direction: block;  
+            margin-top: 220px;
+        background-color: rgb(242, 255, 0);  
+         }
+         .start_button{
+            margin-left: 110px;
         }
-    .start_button
-    /*New game button styling*/
-    
-    {
-        margin: 0;
-        position: absolute;
-        top: 85%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        text-align: center;
-        align-items: center;
-    
-    }
-    .instructions_button{
-        margin: 0;
-        position: absolute;
-        top: 94%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        text-align: center;
-        align-items: center;
-    }
-    
-    }
+       .instructions_button{
+       
+           margin-left: 300px;}
+            } 
+
+            @media only screen and (max-width: 470px) {
+
+                .memory-game{
+                    height: 380px;
+                    width: 380px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    margin-bottom: 400px;
+                    top: 40px;
+                    position: absolute;}
+                      
+                    .buttons-group a{
+                    width: 130px;
+                     height: 40px;
+                    display: flex;
+                    font-size: 12px;
+                    flex-direction: row;  
+                    margin-top: 180px;
+                    background-color: rgb(96, 84, 157);  
+                    
+                     }
+                     .start_button{
+                     margin-left: 210px;
+                        }
+                    .instructions_button{
+                    margin-left: 50px;
+                        } }
+            
+   @media only screen and (max-width: 360px) {
+
+    .memory-game{
+        height: 290px;
+        width: 290px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 400px;
+        top: 60px;
+        position: absolute;}
+          
+        .buttons-group a{
+            width: 100px;
+            height: 30px;
+           font-size: 12px;
+           flex-direction: row;  
+           margin-top: 100px;
+        background-color: rgb(255, 0, 0);  
+         }
+        .start_button{
+         margin-left: 40px;
+        }
+       .instructions_button{
+       
+         margin-left: 170px;} 
+           
+
+            } 
+
