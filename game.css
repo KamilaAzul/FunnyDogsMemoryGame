@@ -100,7 +100,6 @@ body
 }
 .buttons-group a{
 
-    background-color: rgb(0, 255, 4);
     width: 200px;
     height: 50px;
     font-size: 20px;
@@ -159,8 +158,8 @@ a:hover{
             font-size: 15px;
             flex-direction: row;  
             margin-top: 280px;
-            background-color: rgb(255, 0, 187);
             
+     
      }
      .start_button
         {
@@ -193,7 +192,6 @@ a:hover{
         flex-direction: row;  
         margin-top: 280px;
         
-    background-color: aqua;
  }
  .start_button
  {
@@ -225,7 +223,7 @@ a:hover{
         font-size: 15px;
         flex-direction: row;  
         margin-top: 280px;
-        background-color: blue; 
+        
         
      }
      .start_button{
@@ -253,7 +251,7 @@ a:hover{
             font-size: 10px;
             flex-direction: block;  
             margin-top: 220px;
-        background-color: rgb(242, 255, 0);  
+         
          }
          .start_button{
             margin-left: 110px;
@@ -276,12 +274,12 @@ a:hover{
                       
                     .buttons-group a{
                     width: 130px;
-                     height: 40px;
+                    height: 40px;
                     display: flex;
                     font-size: 12px;
                     flex-direction: row;  
                     margin-top: 180px;
-                    background-color: rgb(96, 84, 157);  
+                   
                     
                      }
                      .start_button{
@@ -308,7 +306,7 @@ a:hover{
            font-size: 12px;
            flex-direction: row;  
            margin-top: 100px;
-        background-color: rgb(255, 0, 0);  
+         
          }
         .start_button{
          margin-left: 40px;
