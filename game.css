@@ -147,7 +147,7 @@ a:hover{
         width: 520px;
         margin-left: 100px;
         margin-bottom: 400px;
-        top: 20px;
+        top: 10px;
         }
       
         .buttons-group a
@@ -157,7 +157,7 @@ a:hover{
             display: flex;
             font-size: 15px;
             flex-direction: row;  
-            margin-top: 280px;
+            margin-top: 290px;
             
      
      }
