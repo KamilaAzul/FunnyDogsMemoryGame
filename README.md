@@ -53,7 +53,7 @@ The Funny Dogs Memory Game website has three pages. The [welcome page](index.htm
  * ### Colour Scheme
       The color scheme chosen for the project is warm colors in shades of brown, beige, and cream.
 
-      ![Alt text](images/screenshoots/Palette.png)
+   ![Alt text](images/Palette.png)   
 
 [Back to top](<#contents>)
 
@@ -109,22 +109,11 @@ This page contains sixteen randomly arranged cards, eight matching pairs, as we 
 
 ## Testing
 
-### Code Validation
 
-All the code was validated on the [W3C html Validator](https://validator.w3.org/) and the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). 
-Some small errors were found on the home and inspiration pages. After a fix and retest, no errors were returned for both. 
-
-The HTML validator results for each page are below:
-
-* Welome Page
-  - No Error Found.
-
-* Instruction Page
-  - No Error Found.
-* Memory Game Page
-  - No Error Found.
+Please refer to [**_here_**](TESTING.md) for more information on testing Wawas Woods.
 
 [Back to top](<#contents>)
+
 
 ## Deployment
 
