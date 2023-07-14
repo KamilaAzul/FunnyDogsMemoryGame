@@ -10,6 +10,14 @@
 <body>
 
   <section class="memory-game">
+      <section id="results">
+ <div class="correct">
+    <p class="score_one">Correct Answers:  <span id="score">0</span></p>
+ </div>
+ <div class="moves">
+    <p class="scores">Number of moves: <span id="incorrect">0</span></p>
+</div>
+</section>
     <div class="memory-card" data-framework="green">
       <img class="front-face" src="images/frontFaceCards/1.png" alt="Green" />
       <img class="back-face" src="images/backCard/Bone_pixabay.png" alt="Bone" />
@@ -79,17 +87,21 @@
         <img class="front-face" src="images/frontFaceCards/8.png" alt="Grey" />
       <img class="back-face" src="images/backCard/Bone_pixabay.png" alt="Bone" />
     </div>
+    <section id="buttonsBottom">
+ 
+      <div class="buttons-group">
+        <a class="instructions_button" href="game.html">Start Game</a> 
+      </div>
+      <div class="buttons-group">
+        <a class="start_button" href="info.html">Instructions</a>
+      </div>
+    
+    </section>
   </section>
 
-  <section id="buttonsBottom">
-    <div class="buttons-group">
-      <a class="start_button" href="info.html">Instructions</a>
-    </div>
-    <div class="buttons-group">
-      <a class="instructions_button" href="game.html">Start Game</a> 
-    </div>
-  </section>
+
   
+
   <script src="script.js"></script>
 
 </body>
