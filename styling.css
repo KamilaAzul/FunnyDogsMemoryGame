@@ -15,29 +15,26 @@ body
     justify-content: center;
     min-height: 100vh;
     background-image: url("images/frontFaceCards/v1008-25-b.jpg");
-
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 /*styling welcome page*/
 
-.container{
-    position: relative;
+#container{
     width: 60%;
     height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin:auto;
+    padding-top: 10px;
     background-color: rgba(233, 216, 165, 0.4); 
-    font-size: 50px;
     border-radius: 40px;
-    padding: 30px;
-    font-size: 70px;
-    text-align: justify;
+    text-align: center;
     box-shadow: 0px 50px 100px -20px  rgba(50, 50, 93, 0.5);
+    position: relative;
     }
 
-.text h1{ 
+h1{ 
     
-    margin-top: -120px;
+    margin-top: 90px;
     font-size: 60px;    
     text-align: center;
     color: rgb(146, 77, 25);
@@ -45,15 +42,22 @@ body
   }
 
   /*buttons styling welcome page*/
-  .buttons-group a
-  {
-    margin-top: 50px;
-    width: 200px;
-    height: 50px;
-  }
 
+.buttons{
+    
+    text-align: center;
+    width: 85%;
+    padding-bottom: 20%;
+}
+  .buttons-group
+  {
+    flex-basis: 60%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 15%; 
+  }
   a{
-    position: absolute;
+
     font-size: 20px;
     font-weight: 400;
     border-radius: 30px;
@@ -63,432 +67,189 @@ body
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;}
+    color: black;
+    background-color: burlywood;
+}
 
-    .start_button{
-        margin-left: 440px;
-        background-color: burlywood;
-    }
-       .instructions_button{
-        margin-left: 200px;
-        background-color: burlywood;
-       }
-
+   
 /*Instrucrion page styling*/
-.instruction_container{
-    position: relative;
-    width: 60%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(233, 216, 165, 0.4); 
-    font-size: 50px;
-    border-radius: 40px;
-    padding: 30px;
-    font-size: 70px;
-    text-align: center;
-    box-shadow: 0px 50px 100px -20px  rgba(50, 50, 93, 0.5);
-    }
 
-  .content h2{
-    margin-top: -150px;
-    font-size: 25px;    
+  .instruction_container h2{
+    margin-top: 20px;
+    padding:20px 12px;
+    font-size: 22px;    
     text-align: center;
     color: rgb(146, 77, 25);
     text-shadow: 1px 1px 1px rgb(32, 21, 23);
   }
-  .buttons a{
-    margin-top: 130px;
-    width: 200px;
-    height: 50px;
+  /*buttons styling*/
+
+  .buttons{
+
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    position: absolute;
+   
+}
+.buttons-group2{
+
+    flex-basis: 60%;
+    box-sizing: border-box;
+    text-align: center; 
 }
 a{
-    
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     border-radius: 30px;
     outline: none;
     cursor: pointer;
     box-shadow: 0 3px 5px rgb(150, 84, 30);
-    justify-content: center;
-    display: flex;
-    align-items: center;
     box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.5);
+    margin-top:10px;
+    padding-top: 10px;
     text-decoration: none;
     color: black;
-}
-a:hover{
-   transform: translateY(-5px);
-   box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.25);
-}
-
- .onset{
-    margin-left: 520px;
+    display: inline-block;
+    border: 0;
+    border-radius: 56px;
+    height: 55px;
+    width: 70%;
     background-color: burlywood;
+
 }
-   .welcome_button{
-    margin-left: 280px;
-    background-color: burlywood;
-   }
 
-@media screen and (max-width: 1900px){
-
-    .instruction_container{
-        
-        width: 90%;
-        height: 80vh;
-        display: flex;
-        font-size: 50px;
-        border-radius: 40px;
-        padding: 30px;
-        font-size: 70px;}
-
-    .content h2{
-        margin-top: -150px;
-        font-size: 25px;    
-        text-align: center;}
-
-        .buttons a{
-            margin-top: 50px;
-        }
-        .onset{
-            margin-left: 670px;
-            background-color: burlywood;
-        }
-           .welcome_button{
-            margin-left: 400px;
-            background-color: burlywood;
-           }
-}
-@media screen and (max-width: 1200px){
-     /*welcome page styling*/
-
-     .container{
-        width: 100%;
-        height: 80vh; 
-    }
-    .text h1{
-        font-size: 50px;
-        padding-top: 80px;
-        text-align: center;
-        text-shadow: 1px 1px 1px rgb(32, 21, 23);
+@media screen and (max-width: 1200px) {
+/*buttons styling welcome page*/
+#container{
+    width: 70%;
+    height: 90vh;
     }
 
-/* instructions page styling*/
+h1{ 
+font-size:50px;}
 
-.instruction_container{
-    width: 100%;
-    height: 120vh;
-    margin-left: 5%;
-    margin-right: 5%;
-    }
-.content{
-    position: relative;
+  a{
+ font-size: 19px;}
+  }
 
-}
-.content h2{
-    font-size: 25px;    
-    text-align: center;
-    text-shadow: 1px 1px 1px rgb(32, 21, 23);
-}
-/* instructions buttons styling*/
-.buttons a{
-    margin-top: 50px;
-}
-.onset{
-    margin-left: 470px;
-    background-color: burlywood;
-}
-   .welcome_button{
-    margin-left: 200px;
-    background-color: burlywood;}
+/*Instrucrion page styling*/
 
-}
-@media only screen and (max-width: 950px){
-   /*welcome page styling*/
+.buttons-group2{
 
-   .container{
-    width: 100%;
-    height: 80vh; 
+flex-basis: 60%;
+box-sizing: border-box;
+ text-align: center; 
 }
-.text h1{
-    font-size: 50px;
-    padding-top: 80px;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgb(32, 21, 23);
-}
-
-/* welcome page buttons styling*/
 a{
-    width: 200px;
-    height: 10vh;
-    top: 60%;
-    text-align: center;
-    justify-content: center;
-    padding-top: 5px;  
-    font-size: 20px;    
-}
-.start_button
-{
-margin: 20px 340px;
-}
-.instructions_button{
-margin: 20px 120px;
-}
-/* instructions page styling*/
+ font-size: 19px;}
 
-.instruction_container{
-width: 100%;
-height: 120vh;
-margin-left: 5%;
-margin-right: 5%;
-}
-.content{
-position: relative;
+/* Medium screen sizes from 950px wide and down
+(large laptops and desktops, 950px and up) */
 
-}
-.content h2{
-font-size: 20px;    
-text-align: center;
-text-shadow: 1px 1px 1px rgb(32, 21, 23);
-}
+@media only screen and (max-width: 950px){
 
-/* instructions buttons styling*/
-.buttons a{
-    margin-top: 120px; 
+#container{
+width: 70%;
+height: 90vh;
 }
-.onset{
-    margin-left: 370px;
-    background-color: burlywood;
+    
+h1{ 
+font-size:50px;
+margin-top: 150px;}
+a{
+font-size: 19px;}
+
+    
+/*Instrucrion page styling*/  
+
+.instruction_container h2{
+
+font-size: 20px; }
+
+a{
+font-size: 19px;}
+
+.buttons-group2{
+flex-basis: 70%;}
 }
-   .welcome_button{
-    margin-left: 100px;
-    background-color: burlywood;}
-}  
  
-
-
-@media all and (max-width: 700px) {
-
-    /*welcome page styling*/
-
-    .container{
-        width: 100%;
-        height: 80vh; 
-    }
-    .text h1{
-        font-size: 40px;
-        padding-top: 80px;
-        text-align: center;
-        text-shadow: 1px 1px 1px rgb(32, 21, 23);
-    }
-
-    /* welcome page buttons styling*/
-    a{
-        width: 200px;
-        height: 10vh;
-        top: 50%;
-        text-align: center;
-        justify-content: center;
-        padding-top: 5px;  
-        font-size: 20px;    
-    }
-.start_button
+@media only screen and (max-width: 840px) 
 {
-    margin: 40px 220px; 
+#container{
+width: 70%;
+height: 80vh;
+        }
+.instruction_container h2{
+font-size: 18px;
 }
-.instructions_button{
-    margin: 20px 0;
 }
-/* instructions page styling*/
 
-.instruction_container{
-    width: 100%;
-    height: 120vh;
-    margin-left: 5%;
-    margin-right: 5%;
-    }
-.content{
-    position: relative;
+@media only screen and (max-width: 700px) {
 
-}
-.content h2{
-    font-size: 17px;    
-    text-align: center;
-    text-shadow: 1px 1px 1px rgb(32, 21, 23);
-}
-.buttons a{
-    margin-top: 160px; 
-    font-size: 15px;
-    width: 150px;
-    height: 40px;
-}
-.onset{
-    margin-left: 220px;
-    background-color: burlywood;
-}
-   .welcome_button{
-    margin-left: 30px;
-    background-color: burlywood;}
+#container{
+width: 70%;
+height: 90vh;}
 
-/* instructions buttons styling*/
- 
-   }
+.buttons{
+display: flex;
+justify-content: space-between;
+margin-left: 30px;
+}
+.instruction_container h2{
+    font-size: 17px;}
+a{
+font-size: 16px;}
 
-@media only screen and (max-width: 470px) {
-  
-    /*welcome page styling*/
-
-    .container{
-        width: 100%;
-        height: 80vh; 
-    }
-    .text h1{
-        font-size: 30px;
-        padding-top: 80px;
-        text-align: center;
-        text-shadow: 1px 1px 1px rgb(32, 21, 23);
-    }  
-.text a{
-        width: 150px;
-        height: 30px;
-        top: 50%;
-        text-align: center;
-        justify-content: center;
-        padding-top: 5px;  
-        font-size: 15px;    
-    }
-.start_button
+.buttons-group2
 {
-    margin: 40px 180px;
-      
-}
-.instructions_button{
-    margin: 20px 0;               
+flex-basis: 90%;}
 }
 
-/* instructions buttons styling*/
+@media only screen and (max-width: 550px) {
 
-.buttons a{
-    margin-top: 180px; 
-    font-size: 15px;
-    width: 150px;
-    height: 40px;
-}
-.onset{
-    margin-left: 220px;
-    background-color: burlywood;
-}
-   .welcome_button{
-    margin-left: 30px;
-    background-color: burlywood;}}
+#container{
+width: 70%;
+height: 90vh;
+margin-top: 5px;}
 
-    
-@media only screen and (max-width: 470px){
-    .buttons a{
-        margin-top: 200px; 
-        font-size: 10px;
-        width: 140px;
-        height: 40px;
-    }
-    .onset{
-        margin-left: 160px;
-        background-color: burlywood;
-    }
-       .welcome_button{
-        margin-left: 10px;
-        background-color: burlywood;}}
-    
-
-
-@media only screen and (max-width: 360px){
-
-  
-     /*welcome page styling*/
-
-     .container{
-        width: 100%;
-        height: 80vh; 
-    }
-    .text h1{
-        font-size: 30px;
-        padding-top: 30px;
-        text-align: center;
-        text-shadow: 1px 1px 1px rgb(32, 21, 23);
-
+.buttons{
+width: 110%;
+margin-left: -12px;
+padding: 20px 10px;
     }
 
-    /* welcome page buttons styling*/
-    .buttons-group a{
-        width: 130px;
-         height: 40px;
-        display: flex;
-        font-size: 12px;  
-        margin-top: 80px;
-        padding-top: 2px;
-          
-    }
-    .start_button
-    {
-        margin-left: 10px;
-           }
-       .instructions_button
-       { margin-top: 80px;
-         margin-left: 150px;
-           } 
+h1{ 
+font-size:40px;
+margin-top: 160px;}
+a{
+font-size: 14px;}
 
-/* instructions page styling*/
-
-.instruction_container{
-    width: 100%;
-    height: 120vh;
-    margin-left: 5%;
-    margin-right: 5%;
-    
+.buttons-group2{
+flex-basis: 50%;
     }
 
-.content h2{
-    font-size: 13px;    
-    text-align: center;
-    text-shadow: 1px 0px 0px rgb(32, 21, 23);
-    top: 2px;
-}
+.instruction_container h2{
+font-size: 15px;
+}}
 
+ @media only screen and (max-width: 395px) {
 
-/* instructions buttons styling*/
-.buttons a{
-    margin-top: 160px; 
-    font-size: 10px;
-    width: 120px;
-    height: 40px;
+.buttons{
+width: 110%;
+padding: 20px 10px;
 }
-.onset{
-    margin-left: 140px;
-    background-color: burlywood;
+.buttons-group2{
+flex-basis: 90%;
 }
-   .welcome_button{
-    margin-left: 10px;
-    background-color: burlywood;}
+h1{
 
-/*styling welcome page buttons*/
-
-.text a{
-    width: 130px;
-    height: 30px;
-    top: 50%;
-    text-align: center;
-    justify-content: center;
-    padding-top: 5px;  
-    font-size: 10px;    
+font-size:30px;}
+a{
+font-size: 12px;}
+.instruction_container h2{
+font-size: 14px;}
+.buttons{
+margin-left: -15px;
 }
-.start_button
-{
-margin: 40px 140px;
-  
-}
-.instructions_button{
-margin: 20px 0;               
-    }}
-   
+ }
