@@ -98,6 +98,9 @@ This page contains sixteen randomly arranged cards, eight matching pairs, as we 
 
 ![Alt text](images/screenshoots/MemoryGame2.png)
 
+- The moves counter helps to track of how many moves the player has made.
+- The score shows how many correct answers the player has at the moment.
+
 [Back to top](<#contents>)
 
 ## Technologies Used

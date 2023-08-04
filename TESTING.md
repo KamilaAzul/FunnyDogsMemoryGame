@@ -25,9 +25,12 @@ The CSS validator didn't detect any errors.
 
 * The responsive design tests were carried out manually with [Responsive Design Checker](https://www.responsivedesignchecker.com/).
 
+## Testing the User Stories
+
+- As a user I want to be able to navigate through the whole site smoothly.
+- As a user I want to understand the purpose of the site upon loading it.
+- As a user I want to understand the rules of the game.
+- As a user I want to play the game with no technical problems.
+
 ## Known Bugs
 
- ### Unresolved
-
-The buttons on the website should move smoothly along with the text. 
-There must be changes in CSS code in order to do this.
