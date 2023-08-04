@@ -8,6 +8,8 @@ The game doesn't have a time limit to find the pairs of cards.
 Due to the low level of difficulty, the game is intended for younger users,to entertain and at the same time improve memory; however adults can also play it. 
 
 Throughout the creation of this game, I was using three HTML ( index.html, welcome.html, instruction.html) two CSS files (game.css, style.css), and one java.js file.
+[View the live project here.](https://odden69.github.io/memory-game/)  
+https://kamilaazul.github.io/FunnyDogsMemoryGame/
 
 
 # Contents
@@ -89,12 +91,12 @@ This page contains sixteen randomly arranged cards, eight matching pairs, as we 
 
 * The memory card container with card facing forward
 
-![Alt text](images/screenshoots/Memory%20Game%20Page%20cards.png)
+![Alt text](images/screenshoots/MemoryGame1.png)
 
 * The memory card container with card facing backwards 
 
-![Alt text](images/screenshoots/Memory%20Game%20page.png)
 
+![Alt text](images/screenshoots/MemoryGame2.png)
 
 [Back to top](<#contents>)
 
@@ -117,7 +119,15 @@ Please refer to [**_here_**](TESTING.md) for more information on testing.
 
 ## Deployment
 
-The site was deployed to GitHub page.
+
+### GitHub Pages
+The site was deployed to GitHub page. To deploy our project, we need to make the following steps:
+- Find the GitHub repository of the project we want to deploy.
+- Click on the Settings. The button we can find on the far right side of the menu.
+- Scroll down and click on the Pages section.
+- Under Source, select "main" in the dropdown menu.
+- Click Save and the page should refresh automatically.
+- To confirm deployment the information will appear:  "Your site is ready to be published at  https://kamilaazul.github.io/FunnyDogsMemoryGame/".
 
 [Back to top](<#contents>)
 
