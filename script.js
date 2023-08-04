@@ -1,9 +1,15 @@
 const cards = document.querySelectorAll('.memory-card');
+const movesCount = document.querySelector("#moves");
+const scoreDisplay = document.querySelector("#score");
+const winMessage = document.querySelector("#win-message");
+
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
- 
+let score = 0;
+
+
 function flipCard(){
   if (lockBoard) return;
   if (this ===firstCard) return;
@@ -16,8 +22,8 @@ function flipCard(){
 } 
 else{
   //second card click
-  
-  secondCard = this;}
+  secondCard = this;
+}
  
 // checking if the cards match
 
@@ -28,6 +34,12 @@ if (firstCard.dataset.framework ===
      firstCard.removeEventListener('click', flipCard);
      secondCard.removeEventListener('click', flipCard);
      resetBoard();
+     movesCounter()
+
+      //Increaseing the score for each correct match
+     score++;
+     document.querySelector("#score").textContent = score;
+
   } else{
     // the cards don't-->unflip cards
       
@@ -49,15 +61,27 @@ if (firstCard.dataset.framework ===
       firstCard = secondCard = "";
       resetBoard();
     }, 1500);
-    
+
+    movesCounter(); 
   }
-//reset board
+
+  //Counting each move of the player
+  function movesCounter() {
+    movesCount.innerHTML++;
+    moves++;
+}
+
+//Reseting board
 function resetBoard() {
     firstCard = null;
     secondCard = null;
     hasFlippedCard = false;
     lockBoard = false;
-}}
+  
+}
+
+}
+
 // IIFE- Immediately Invoked Function expression method
 (function shuffle()
 {cards.forEach(function (card)
