@@ -372,7 +372,13 @@ a:hover{
         padding-bottom: 40px;
         top: 60px;
         position: absolute;}
-                       
+                      
+        #buttonsBottom{
+            
+        }
+        .buttons-group {  
+                    
+        } 
         a{
         font-size: 12px;
         }            
