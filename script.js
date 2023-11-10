@@ -108,3 +108,21 @@ function resetBoard() {
 cards.forEach(function (card) {
   card.addEventListener('click', flipCard);
 });
+
+// Reseting board
+function resetBoard() {
+    firstCard = null;
+    secondCard = null;
+    hasFlippedCard = false;
+    lockBoard = false;
+  
+    // Check if all cards are paired
+    if (document.querySelectorAll('.flip').length === cards.length) {
+      stopTimer();
+    }
+  }
+  
+  // Stop the timer
+  function stopTimer() {
+    clearInterval(timer);
+  }
