@@ -1,128 +1,112 @@
+// Selecting DOM elements
 const cards = document.querySelectorAll('.memory-card');
 const movesCount = document.querySelector("#moves");
 const scoreDisplay = document.querySelector("#score");
 const winMessage = document.querySelector("#win-message");
-const timerDisplay = document.querySelector("#timer");
 
+// Game state variables
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 let score = 0;
-let moves = 0;
-let timer;
-let elapsedSeconds = 0;
 
+// Event listener function for card click
 function flipCard() {
-  if (lockBoard) return;
-  if (this === firstCard) return;
-  this.classList.add('flip');
+    // Check if the board is locked or the same card is clicked
+    if (lockBoard || this === firstCard) return;
 
-  if (!hasFlippedCard) {
-    // first card click
-    hasFlippedCard = true;
-    firstCard = this;
-  } else {
-    // second card click
-    secondCard = this;
-  }
+    // Add 'flip' class to the clicked card
+    this.classList.add('flip');
 
-  // checking if the cards match
-  if (firstCard.dataset.framework === secondCard.dataset.framework) {
-    // the cards match-->disable cards
-    firstCard.removeEventListener('click', flipCard);
-    secondCard.removeEventListener('click', flipCard);
-    resetBoard();
-    movesCounter();
+    if (!hasFlippedCard) {
+        // First card click
+        hasFlippedCard = true;
+        firstCard = this;
+    } else {
+        // Second card click
+        secondCard = this;
 
-    // Increasing the score for each correct match
-    score++;
-    document.querySelector("#score").textContent = score;
+        // Check if the cards match
+        if (firstCard.dataset.framework === secondCard.dataset.framework) {
+            // The cards match --> disable cards, update score, and reset the board
+            firstCard.removeEventListener('click', flipCard);
+            secondCard.removeEventListener('click', flipCard);
+            resetBoard();
+            movesCounter();
+            score++;
+            scoreDisplay.textContent = score;
 
-  } else {
-    // the cards don't-->unflip cards
-    lockBoard = true;
-    setTimeout(() => {
-      firstCard.classList.remove('flip');
-      secondCard.classList.remove('flip');
-    }, 1500);
+            if (document.querySelectorAll('.flip').length === cards.length) {
+                // Display congratulations message and game stats
+                if (winMessage) {
+                    winMessage.classList.remove('hidden');
+                    winMessage.innerHTML = `
+                        <p>Congratulations! You've matched all the cards!</p>
+                        <p>Moves: <span id="moves">${movesCount.innerHTML}</span></p>
+                        <p>Score: <span id="score">${score}</span></p>
+                    `;
+                }
+            
+                // Redirect to congratulation.html after a delay (e.g., 2 seconds)
+                setTimeout(() => {
+                    const queryString = `moves=${movesCount.innerHTML}&score=${score}`;
+                    window.location.href = `congratulation.html?${queryString}`;
+                }, 2000);
+            }
+        } else {
+            // The cards don't match --> unflip cards, add animation, and reset the board
+            lockBoard = true;
+            setTimeout(() => {
+                firstCard.classList.remove('flip');
+                secondCard.classList.remove('flip');
+            }, 1500);
 
-    // adding 'shake' animation when cards don't match
-    setTimeout(() => {
-      firstCard.classList.add("shake");
-      secondCard.classList.add("shake");
-    }, 1000);
+            // Add 'shake' animation when cards don't match
+            setTimeout(() => {
+                if (firstCard && secondCard) {
+                    firstCard.classList.add("shake");
+                    secondCard.classList.add("shake");
+                }
+            }, 1000);
 
-    setTimeout(() => {
-      firstCard.classList.remove("shake", "flip");
-      secondCard.classList.remove("shake", "flip");
-      firstCard = secondCard = "";
-      resetBoard();
-    }, 1500);
+            // Remove 'shake' and 'flip' classes after animation and reset the board
+            setTimeout(() => {
+                if (firstCard && secondCard) {
+                    firstCard.classList.remove("shake", "flip");
+                    secondCard.classList.remove("shake", "flip");
+                    firstCard = secondCard = null;
+                    resetBoard();
+                }
+            }, 1500);
 
-    movesCounter();
-  }
+            // Count the move
+            movesCounter();
+        }
+    }
 }
 
 // Counting each move of the player
 function movesCounter() {
-  movesCount.innerHTML++;
-  moves++;
-
-  // Start the timer on the first move
-  if (moves === 1) {
-    startTimer();
-  }
+    movesCount.innerHTML++;
 }
 
-// Starting the timer
-function startTimer() {
-  timer = setInterval(() => {
-    elapsedSeconds++;
-    updateTimerDisplay();
-  }, 1000);
-}
-
-// Update the timer display
-function updateTimerDisplay() {
-  const minutes = Math.floor(elapsedSeconds / 60);
-  const seconds = elapsedSeconds % 60;
-  timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-}
-
-// Reseting board
-function resetBoard() {
-  firstCard = null;
-  secondCard = null;
-  hasFlippedCard = false;
-  lockBoard = false;
-}
-
-// IIFE- Immediately Invoked Function expression method
-(function shuffle() {
-  cards.forEach(function (card) {
-    let randomPos = Math.floor(Math.random() * 16);
-    card.style.order = randomPos;
-  });
-})();
-
-cards.forEach(function (card) {
-  card.addEventListener('click', flipCard);
-});
-
-// Reseting board
+// Reset the board state
 function resetBoard() {
     firstCard = null;
     secondCard = null;
     hasFlippedCard = false;
     lockBoard = false;
-  
-    // Check if all cards are paired
-    if (document.querySelectorAll('.flip').length === cards.length) {
-      stopTimer();
-    }
-  }
-  
-  // Stop the timer
-  function stopTimer() {
-    clearInterval(timer);
-  }
+}
+
+// Immediately Invoked Function Expression (IIFE) for shuffling cards
+(function shuffle() {
+    cards.forEach(function (card) {
+        let randomPos = Math.floor(Math.random() * 16);
+        card.style.order = randomPos;
+    });
+})();
+
+// Add event listeners to cards
+cards.forEach(function (card) {
+    card.addEventListener('click', flipCard);
+});
