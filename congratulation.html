@@ -31,6 +31,15 @@
     </div>
     </div>
     </section>
-   
+    <script>
+        // Taking moves and score from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const moves = urlParams.get('moves');
+        const score = urlParams.get('score');
+
+        // Shows moves and score
+        document.getElementById('moves').textContent = moves;
+        document.getElementById('score').textContent = score;
+    </script>
 </body>
 </html>
