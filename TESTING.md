@@ -1,14 +1,41 @@
-### Code Validation
+# Testing
+
+## Code Validation
 
 The Lighthouse, W3C Markup Validator, JSHint and the Lighthouse report were used to determine whether there were any
 errors in the code:
 
 * [W3C html Validator](https://validator.w3.org/), 
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/),
-* [jshint validator](https://jshint.com/),
-* [Lighthouse report],
+* [Jshint validator](https://jshint.com/),
+* Lighthouse report,
 
-#### JSHint validator:
+
+## W3C html Validator
+
+The HTML validator results for each page are below:
+
+#### Welcome Page:
+- No errors or warnings to show.
+#### Instruction Page:
+- No errors or warnings to show.
+#### Game Page:
+- Some errors and warining were detected and were solved.
+Not solved waringin are not affecting the operation of the site.
+* Unclosed Elements,
+* End of HTML
+Closing tags for the *section* and *body* elements are missing. Add them at the end of your HTML code:
+Correction of this error was made.
+
+![Testing](images/Testing/htmlValidator.png)
+
+#### Congratulation Page:
+- No errors or warnings to show.
+
+![Testing](images/Testing/validationHtml.png)
+<br>
+
+## Jshint validator
 
 There are 10 functions in this file.
 
@@ -45,29 +72,45 @@ The most complex function has a cyclomatic complexity value of 7 while the media
 
 ![jshintCongratulations](images/Testing/jshintCongratulations.png)
 
-The HTML validator results for each page are below:
 
-* Welome Page
-* Instruction Page
-* Memory Game Page
-* Congratulation Page
+[Back to top](<#testing>)
 
+#### The CSS validator 
 
-On all pages same error was found. It's not affecting the operation of the site
+Didn't detect any errors.
 
-![Alt text](images/Validation%20html.png)
+![Validation](images/Testing/validationHtml.png)
 
+#### Lighthouse report
 
-[Back to top](<#contents>)
+Welcome Page
+![Welcome Page](images/Testing/WelcomePage.png)
+Instructions Page
+![Instructions](images/Testing/Instructions.png)
+Game Page
+![Game Page](images/Testing/GamePage.png)
+Congratulations Page
+![Congratulations](images/Testing/CongratulationsPage.png)
 
-The CSS validator didn't detect any errors.
+#### Console Testing
 
-![Alt text](images/validation%20css.png)
+* Solved bugs:
+A console error is generated each time the first card is flipped.
+<br>
+* There are no error in console at the moment.
+![Console](images/Testing/console.png)
+
 
 ## Responsiveness Test
 
 * The responsive design tests were carried out manually with [Responsive Design Checker](https://www.responsivedesignchecker.com/).
 The website has adequate responsiveness on all screen sizes.
+
+![Big](images/Testing/BigScreen.png)
+![Small](images/Testing/smallScreen.png)
+![Medium](images/Testing/Medium.png)
+
+[Back to top](<#testing>)
 
 ## Testing the User Stories
 
@@ -83,31 +126,34 @@ The website contains a detailed description of what this website is for.
 * The user does not encounter any technical problems while playing.
 All game functions work properly.
 
-# Manual testing
+[Back to top](<#testing>)
 
-* Welome Page
-* Instruction Page
-* Memory Game Page
-* Congratulation Page
+## Manual testing
+
+All pages were manually tested. On every page there are two buttons.
+
+#### Welome Page
+- Start Game Button - working well
+- Instruction Game Button- working well
+#### Instruction Page
+- Start Game Button - working well
+- Welcome Page Button- working well
+#### Memory Game Page
+- Start Game Button - working well
+- Instruction Game Button- working well
+ - The score- working correctly. Whenever two cards are paired the score changes.
+ - The movements count- Working well. Whenever the user uncovers two cards one number is added to the moves number.
+ - Cards- cards are working correctly. They are turning whenever are clicked. When cards are paired they stay uncovered until all cards are paired and only then do they all turn again showing the front.
+#### Congratulation Page
+- Play One More Time Button - working well
+- Instruction Game Button- working well
+- The score number is showing accordingly.
+- The moves number is showing accordingly.
 
 ## Known Bugs
 
-https://validator.w3.org/ showed some errors:
+-The are now known bugs.
 
-Unclosed Elements:
-<section class="memory-game">
-    <!-- content here -->
-</section>
+[Back to top](<#testing>)
 
-End of HTML
-Closing tags for the <section> and <body> elements are missing. Add them at the end of your HTML code:
-Correction:
-</section>
-</body>
-</html>
-
-Not solved:
-Heading Elements:
-Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
-<section id="buttonsBottom">
 
