@@ -11,7 +11,7 @@ errors in the code:
 * Lighthouse report,
 
 
-## W3C html Validator
+## [W3C html Validator](https://validator.w3.org/)
 
 The HTML validator results for each page are below:
 
@@ -35,7 +35,7 @@ Correction of this error was made.
 ![Testing](images/Testing/validationHtml.png)
 <br>
 
-## Jshint validator
+## [Jshint validator](https://jshint.com/)
 
 There are 10 functions in this file.
 
@@ -75,13 +75,19 @@ The most complex function has a cyclomatic complexity value of 7 while the media
 
 [Back to top](<#testing>)
 
-#### The CSS validator 
+## [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-Didn't detect any errors.
+There are two css file: game.css and styling.css
 
-![Validation](images/Testing/validationHtml.png)
+* game.css had one error, which was corrected and at the moment there are no errors detected.
+![Game css](images/Testing/CssValidation.png)
 
-#### Lighthouse report
+* styling.css has no errors.
+
+![Styling css](images/Testing/CssValidation2.png)
+
+
+## Lighthouse report
 
 Welcome Page
 ![Welcome Page](images/Testing/WelcomePage.png)
@@ -92,7 +98,7 @@ Game Page
 Congratulations Page
 ![Congratulations](images/Testing/CongratulationsPage.png)
 
-#### Console Testing
+## Console Testing
 
 * Solved bugs:
 A console error is generated each time the first card is flipped.
@@ -101,7 +107,7 @@ A console error is generated each time the first card is flipped.
 ![Console](images/Testing/console.png)
 
 
-## Responsiveness Test
+### Responsiveness Test
 
 * The responsive design tests were carried out manually with [Responsive Design Checker](https://www.responsivedesignchecker.com/).
 The website has adequate responsiveness on all screen sizes.
@@ -152,7 +158,7 @@ All pages were manually tested. On every page there are two buttons.
 
 ## Known Bugs
 
--The are now known bugs.
+- The are now known bugs.
 
 [Back to top](<#testing>)
 

@@ -8,8 +8,8 @@ The game doesn't have a time limit to find the pairs of cards.
 Due to the low level of difficulty, the game is intended for younger users,to entertain and at the same time improve memory; however adults can also play it. 
 
 Throughout the creation of this game, I was using three HTML ( index.html, welcome.html, instruction.html) two CSS files (game.css, style.css), and one java.js file.
-[View the live project here.](https://odden69.github.io/memory-game/)  
-https://kamilaazul.github.io/FunnyDogsMemoryGame/
+[View the live project here.](https://kamilaazul.github.io/FunnyDogsMemoryGame/index.html)  
+
 
 
 # Contents
@@ -123,18 +123,35 @@ Please refer to [**_here_**](TESTING.md) for more information on testing.
 ## Deployment
 
 
-### GitHub Pages
+## Forking the GitHub Repository
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the GitHub Repository.
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+<br />
+
+## Making a Local Clone
+1. Log in to GitHub and locate the GitHub Repository.
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type git clone, and then paste the URL you copied.
+<br/>
+
+## Github Pages
 The site was deployed to GitHub page. To deploy our project, we need to make the following steps:
-- Find the GitHub repository of the project we want to deploy.
-- Click on the Settings. The button we can find on the far right side of the menu.
-- Scroll down and click on the Pages section.
-- Under Source, select "main" in the dropdown menu.
-- Click Save and the page should refresh automatically.
-- To confirm deployment the information will appear:  "Your site is ready to be published at  https://kamilaazul.github.io/FunnyDogsMemoryGame/".
+1. Find the GitHub repository of the project we want to deploy.
+2. Click on the Settings. The button we can find on the far right side of the menu.
+3.  Scroll down and click on the Pages section.
+4.  Under Source, select "main" in the dropdown menu.
+5. Click Save and the page should refresh automatically.
+6.  To confirm deployment the information will appear:  "Your site is ready to be published at  https://kamilaazul.github.io/FunnyDogsMemoryGame/".
 
 [Back to top](<#contents>)
 
-## Credits
+# Credits
 ### Content
 
 * The font came from [Google Fonts](https://fonts.google.com/).
