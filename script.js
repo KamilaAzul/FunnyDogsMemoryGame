@@ -1,4 +1,3 @@
-// DOM elements
 const cards = document.querySelectorAll('.memory-card');
 const movesCount = document.querySelector("#moves");
 const scoreDisplay = document.querySelector("#score");
@@ -33,7 +32,7 @@ function flipCard() {
 
         // Check if the cards match
         if (firstCard.dataset.framework === secondCard.dataset.framework) {
-            // If the cards match disable cards, update score, and reset the board
+            // If the cards match-->disable cards, update score, and reset the board
             firstCard.removeEventListener('click', flipCard);
             secondCard.removeEventListener('click', flipCard);
             resetBoard();
@@ -105,7 +104,7 @@ function movesCounter() {
 }
 
 
-// Reset the board state
+// Reset the board 
 function resetBoard() {
     firstCard = null;
     secondCard = null;
@@ -127,5 +126,6 @@ function resetBoard() {
 cards.forEach(function (card) {
     card.addEventListener('click', flipCard);
 });
+
 
 
