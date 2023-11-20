@@ -24,6 +24,7 @@ Throughout the creation of this game, I was using three HTML ( index.html, welco
    * [Welcome Page](<#welcome-page>)
    * [Instruction Page](<#instruction-page>)
    * [Memory Game Page](<#memory-game-page>)
+   * [Congratulation Page](<#congratulation-page>)
 * [**Technologies Used**](<#technologies-used>)
 * [**Testing**](<#testing>)
 * [**Deployment**](<#deployment>)
@@ -59,8 +60,9 @@ The Funny Dogs Memory Game website has three pages. The [welcome page](index.htm
 
 [Back to top](<#contents>)
 
-## Existing Features  
-### Welcome Page
+# Existing Features  
+
+## Welcome Page
 
  * The first-page purpose is welcome a user and as well to give two options: 
       - to start the game,
@@ -70,18 +72,18 @@ After clicking a _Start Game_ button the user will be transferred to a memory ga
 
 After clicking the _Instructions_ button the user will be transferred to an instructions page. 
 
-![Alt text](images/screenshoots/welcome%20page.png)
+![Alt text](images/Testing/welcomePage.png)
 
 [Back to top](<#contents>)
 
-### Instruction Page
+## Instruction Page
 
 This page will give a user an explanation of the rules of the game and will give a two option:
 
 -  to go back to the first page by clicking a _Welcome Page_,
 -  to the Memory card page by clicking _Start Game_ where you can start the game.
 
-![Alt text](images/screenshoots/screenshot%20instruction%20site.png)
+![Alt text](images/Testing/InstructionPage.png)
 
 [Back to top](<#contents>)
 
@@ -91,16 +93,23 @@ This page contains sixteen randomly arranged cards, eight matching pairs, as we 
 
 * The memory card container with card facing forward
 
-![Alt text](images/screenshoots/MemoryGame1.png)
+![memory Game cards back](images/screenshoots/MemoryGame1.png)
 
 * The memory card container with card facing backwards 
 
 
-![Alt text](images/screenshoots/MemoryGame2.png)
+![Memory Game cards front](images/screenshoots/MemoryGame2.png)
 
 - The moves counter helps to track of how many moves the player has made.
 - The score shows how many correct answers the player has at the moment.
 
+[Back to top](<#contents>)
+
+## Congratulation Page
+
+Once all cards are paired correctly, the player will be taken to the "Congratulations Page". The user can read a congratulatory message there, the result will be presented and he will be able to decide whether he wants to continue the game or go to another page.
+
+![Congratuations Page](images/Testing/Congrat.png)
 [Back to top](<#contents>)
 
 ## Technologies Used
@@ -109,8 +118,6 @@ This page contains sixteen randomly arranged cards, eight matching pairs, as we 
 * `JavaScript` to create dynamically updating content.
 * [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
 * [Github](https://github.com/) - used to host and edit the website.
-
-[Back to top](<#contents>)
 
 ## Testing
 
@@ -173,5 +180,5 @@ The website was completed as a Portfolio Project 2 JavaScript Essentials Project
 
 I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community, and all at the Code Institute for their help and support.
 
-[Back to top](<#contents>)
+
 
