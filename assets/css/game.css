@@ -129,6 +129,19 @@ body
     position: absolute;
 }
 
+.buttons-group1{
+    
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    flex-basis: 50%;
+    margin-bottom: 5%;
+}
+
+.buttons-group1 a{
+    padding: 15px;
+    width: 100%;
+}
 .buttons-group{
 
     flex-basis: 50%;
