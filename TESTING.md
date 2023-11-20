@@ -27,12 +27,12 @@ Not solved waringin are not affecting the operation of the site.
 Closing tags for the *section* and *body* elements are missing. Add them at the end of your HTML code:
 Correction of this error was made.
 
-![Testing](images/Testing/htmlValidator.png)
+![Testing](assets/images/Testing/htmlValidator.png)
 
 #### Congratulation Page:
 - No errors or warnings to show.
 
-![Testing](images/Testing/validationHtml.png)
+![Testing](assets/images/Testing/validationHtml.png)
 <br>
 
 ## [Jshint validator](https://jshint.com/)
@@ -66,11 +66,11 @@ The most complex function has a cyclomatic complexity value of 7 while the media
 
 * Script.js
 
-![jshint](images/Testing/jshint.png)
+![jshint](assets/images/Testing/jshint.png)
 
 * Congratulations Page
 
-![jshintCongratulations](images/Testing/jshintCongratulations.png)
+![jshintCongratulations](assets/images/Testing/jshintCongratulations.png)
 
 
 [Back to top](<#testing>)
@@ -80,23 +80,23 @@ The most complex function has a cyclomatic complexity value of 7 while the media
 There are two css file: game.css and styling.css
 
 * game.css had one error, which was corrected and at the moment there are no errors detected.
-![Game css](images/Testing/CssValidation.png)
+![Game css](assets/images/Testing/CssValidation.png)
 
 * styling.css has no errors.
 
-![Styling css](images/Testing/CssValidation2.png)
+![Styling css](assets/images/Testing/CssValidation2.png)
 
 
 ## Lighthouse report
 
 Welcome Page
-![Welcome Page](images/Testing/WelcomePage.png)
+![Welcome Page](assets/images/Testing/WelcomePage.png)
 Instructions Page
-![Instructions](images/Testing/Instructions.png)
+![Instructions](assets/images/Testing/Instructions.png)
 Game Page
-![Game Page](images/Testing/GamePage.png)
+![Game Page](assets/images/Testing/GamePage.png)
 Congratulations Page
-![Congratulations](images/Testing/CongratulationsPage.png)
+![Congratulations](assets/images/Testing/CongratulationsPage.png)
 
 ## Console Testing
 
@@ -104,7 +104,7 @@ Congratulations Page
 A console error is generated each time the first card is flipped.
 <br>
 * There are no error in console at the moment.
-![Console](images/Testing/console.png)
+![Console](assets/images/Testing/console.png)
 
 
 ### Responsiveness Test
@@ -112,9 +112,9 @@ A console error is generated each time the first card is flipped.
 * The responsive design tests were carried out manually with [Responsive Design Checker](https://www.responsivedesignchecker.com/).
 The website has adequate responsiveness on all screen sizes.
 
-![Big](images/Testing/BigScreen.png)
-![Small](images/Testing/smallScreen.png)
-![Medium](images/Testing/Medium.png)
+![Big](assets/images/Testing/BigScreen.png)
+![Small](assets/images/Testing/smallScreen.png)
+![Medium](assets/images/Testing/Medium.png)
 
 [Back to top](<#testing>)
 
