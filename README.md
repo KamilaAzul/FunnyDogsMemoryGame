@@ -56,7 +56,7 @@ The Funny Dogs Memory Game website has three pages. The [welcome page](index.htm
  * ### Colour Scheme
       The color scheme chosen for the project is warm colors in shades of brown, beige, and cream.
 
-   ![Alt text](images/Palette.png)   
+   ![Alt text](assets/images/Palette.png)   
 
 [Back to top](<#contents>)
 
@@ -72,7 +72,7 @@ After clicking a _Start Game_ button the user will be transferred to a memory ga
 
 After clicking the _Instructions_ button the user will be transferred to an instructions page. 
 
-![Alt text](images/Testing/welcomePage.png)
+![Alt text](assets/images/Testing/welcomePage.png)
 
 [Back to top](<#contents>)
 
@@ -83,7 +83,7 @@ This page will give a user an explanation of the rules of the game and will give
 -  to go back to the first page by clicking a _Welcome Page_,
 -  to the Memory card page by clicking _Start Game_ where you can start the game.
 
-![Alt text](images/Testing/InstructionPage.png)
+![Alt text](assets/images/Testing/InstructionPage.png)
 
 [Back to top](<#contents>)
 
@@ -93,12 +93,12 @@ This page contains sixteen randomly arranged cards, eight matching pairs, as we 
 
 * The memory card container with card facing forward
 
-![memory Game cards back](images/screenshoots/MemoryGame1.png)
+![memory Game cards back](assets/images/screenshoots/MemoryGame1.png)
 
 * The memory card container with card facing backwards 
 
 
-![Memory Game cards front](images/screenshoots/MemoryGame2.png)
+![Memory Game cards front](assets/images/screenshoots/MemoryGame2.png)
 
 - The moves counter helps to track of how many moves the player has made.
 - The score shows how many correct answers the player has at the moment.
@@ -109,7 +109,7 @@ This page contains sixteen randomly arranged cards, eight matching pairs, as we 
 
 Once all cards are paired correctly, the player will be taken to the "Congratulations Page". The user can read a congratulatory message there, the result will be presented and he will be able to decide whether he wants to continue the game or go to another page.
 
-![Congratuations Page](images/Testing/Congrat.png)
+![Congratuations Page](assets/images/Testing/Congrat.png)
 [Back to top](<#contents>)
 
 ## Technologies Used
